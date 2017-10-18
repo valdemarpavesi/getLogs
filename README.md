@@ -3,7 +3,7 @@ by ssh/sftp  get logs / get a coffee
 
 
 
-linux/windows/MacOS
+Linux/Windows/MacOS
 
 GOOS=linux GOARCH=amd64 go build
 
