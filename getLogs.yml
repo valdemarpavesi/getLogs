@@ -1,0 +1,63 @@
+###################### GetLogs Configuration  #########################
+# use tab, and # to comment out
+# get  logs version 0.0.8
+# keywords:
+# taskget: "console"  -> print to console
+# taskget: "none" -> do nothing
+# taskget: "return" >  save output as file name and transfer .
+# taskget: "sshlistvms" -> create a list with hosts.  execute to all hosts  taskexecute: "sshlistvms:uptime;d
+###############################
+
+description: ssh config
+remote_ipaddr: "127.0.0.1"
+ssh_port: 22
+ssh_key: "ctrlkey.pem"
+username: "root"
+password: ""
+
+description: get logs files by ssh/sftp , in alphabetical order, data,filesindividual ,....
+getfiles:
+
+  filesindividual:
+    - /etc/maria.cnf
+    - /etc/hosts
+
+  root:
+    - /root/*.log
+
+  var:
+    - /var/log
+
+
+description: exceptfiles
+exceptfiles:
+  listfiles:
+
+
+description: task list
+executetasks:
+
+  task0001:
+    taskexecute: "uptime;dmesg | tail;vmstat 1 1;mpstat -P ALL 1 1;pidstat 1 1;iostat -xz 1 1;free -m;sar -n DEV 1 1;sar -n TCP,ETCP 1 1" 
+    taskget: "console"
+
+  task0002:
+    taskexecute: "sosreport --batch | grep ' /var/tmp/sosreport-'"
+    taskget: "return"
+
+  task0003:
+    taskexecute: "rm -r -f /var/tmp/sosreport-*"
+    taskget: "none"
+
+  task0004:
+    taskexecute: "cat /etc/hosts | grep '.local ' | awk '{print $3}'"
+    taskget: "sshlistvms"
+
+  task0005:
+    taskexecute: "sshlistvms:uptime;dmesg | tail;vmstat 1 1;mpstat -P ALL 1 1;pidstat 1 1;iostat -xz 1 1;free -m;sar -n DEV 1 1;sar -n TCP,ETCP 1 1" 
+    taskget: "console"
+
+
+
+
+ 
