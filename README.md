@@ -11,6 +11,10 @@ GOOS=windows GOARCH=amd64 go build
 
 GOOS=darwin GOARCH=amd64 go build -o getLogsOS getLogs.go
 
+# yaml
+
+enter all directory list/files and tasks to be executed
+
 
 
 
