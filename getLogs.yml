@@ -5,7 +5,8 @@
 # taskget: "console"  -> print to console
 # taskget: "none" -> do nothing
 # taskget: "return" >  save output as file name and transfer .
-# taskget: "sshlistvms" -> create a list with hosts.  execute to all hosts  taskexecute: "sshlistvms:uptime;d
+# taskget: "sshlistvms" -> create a list with hosts.  execute to all hosts  taskexecute: "sshlistvms:uptime
+# taskget: "iterate" ->  save integer value , used iterate by next taskexecute:  something iterate
 ###############################
 
 description: ssh config
