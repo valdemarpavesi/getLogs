@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/valdemarpavesi/getLogs.svg?branch=master)](https://travis-ci.org/valdemarpavesi/getLogs)
 [![Go Report Card](https://goreportcard.com/badge/github.com/valdemarpavesi/getlogs)](https://goreportcard.com/report/github.com/valdemarpavesi/getlogs)
-
+[![GoDoc](https://godoc.org/github.com/valdemarpavesi/getlogs?status.svg)](https://godoc.org/github.com/valdemarpavesi/getlogs)
 # getLogs 
 by ssh/sftp  get logs / get a coffee
 
