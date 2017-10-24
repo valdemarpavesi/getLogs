@@ -18,8 +18,8 @@ GOOS=darwin GOARCH=amd64 go build -o getLogsOS getLogs.go
 enter all directory list/files and tasks to be executed
 
 
-
-[![](https://github.com/valdemarpavesi/getLogs/blob/master/getLogs.png) getLogs get a coffee]
+# getLogs get a coffee
+[ ![](https://github.com/valdemarpavesi/getLogs/blob/master/getLogs.png)]
 
 
 
