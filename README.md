@@ -1,4 +1,4 @@
-https://travis-ci.org/valdemarpavesi/getLogs.svg?branch=master
+[![Build Status](https://travis-ci.org/valdemarpavesi/getLogs.svg?branch=master)](https://travis-ci.org/valdemarpavesi/getLogs)
 
 # getLogs
 by ssh/sftp  get logs / get a coffee
