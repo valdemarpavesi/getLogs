@@ -1,3 +1,5 @@
+https://travis-ci.org/valdemarpavesi/getLogs.svg?branch=master
+
 # getLogs
 by ssh/sftp  get logs / get a coffee
 
