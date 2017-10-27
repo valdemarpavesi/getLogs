@@ -2,6 +2,8 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/valdemarpavesi/getlogs)](https://goreportcard.com/report/github.com/valdemarpavesi/getlogs)
 [![GoDoc](https://godoc.org/github.com/valdemarpavesi/getlogs?status.svg)](https://godoc.org/github.com/valdemarpavesi/getlogs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![codecov](https://codecov.io/gh/valdemarpavesi/getLogs/branch/master/graph/badge.svg)](https://codecov.io/gh/valdemarpavesi/getLogs)
+
 # getLogs 
 by ssh/sftp  get logs / get a coffee
 
