@@ -3,6 +3,8 @@ language: go
 go:
   - 1.9
   - tip
+env:
+  - COVERALLS_TOKEN=6d1dfc1c-78f2-457f-b44d-ae14d54bbe44
 
 before_install:
   - go get -t -v ./...
