@@ -28,3 +28,4 @@ enter all directory list/files and tasks to be executed
 
 
 
+https://github.com/valdemarpavesi/getLogs
