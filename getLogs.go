@@ -40,6 +40,9 @@ func (c *yamlinstanceConfig) Parse(data []byte) error {
 
 func getKeyFile(yamlconfig yamlinstanceConfig) (key ssh.Signer, err error) {
 	fileprivatekey := yamlconfig.SSHKey
+	if fileprivatekey == "" {
+		return
+	}
 	buf, err := ioutil.ReadFile(fileprivatekey)
 	if err != nil {
 		return
